@@ -1,0 +1,188 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.profile-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box p {
+  font-size: 18px;
+  color: #555;
+}
+
+strong {
+  color: #333;
+}
+
+.news-form-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.news-row {
+  display: flex;
+  gap: 20px;
+}
+
+.news-row .form-group {
+  flex: 1;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 98%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="text"],
+textarea {
+  height: 20px;
+}
+
+textarea {
+  height: 100px; 
+}
+
+button.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+button.submit-btn:active {
+  background-color: #003d7a;
+  transform: scale(0.98); 
+}
+
+
+.profile-container {
+  padding: 20px;
+}
+
+.news-form-container {
+  margin-bottom: 40px;
+}
+
+.news-container {
+  margin-top: 20px;
+}
+
+.news-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.news-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(31% - 20px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.remove {
+  padding: 10px;
+  color: rgb(246, 124, 30);
+  width: 100%;
+}
+
+.no_news {
+  font-weight: bold;
+  text-align: center;
+  color: rgb(246, 124, 30);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.total_likes {
+  background-color: chartreuse;
+  padding: 10px;
+  display: inline;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .news-row {
+    flex-direction: column; 
+  }
+
+  input,
+  textarea {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  button.submit-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .news-box {
+    width: calc(30% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .news-box {
+    width: calc(45% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .news-box {
+    width: calc(100% - 20px); 
+  }
+}

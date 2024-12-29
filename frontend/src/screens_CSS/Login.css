@@ -1,0 +1,95 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.login-title {
+  text-align: center;
+}
+
+.form-input {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.span_name {
+  font-size: small;
+  color: #535254;
+  display: block;             
+  margin: 10px 0 5px;       
+}
+
+.domain-select {
+  width: 100%;             
+  padding: 10px;           
+  margin: 8px 0;           
+  border: 1px solid #ccc;   
+  border-radius: 4px;     
+  background-color: #fff;   
+  font-size: 16px;         
+  cursor: pointer;           
+}
+
+.domain-select:focus {
+  border-color: #4CAF50;    
+  outline: none;             
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.checkbox-group label {
+  margin: 5px 0;
+}
+
+.submit-button {
+  background-color: #942dde; 
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #ab25c5; 
+}
+
+.toggle-link {
+  text-align: center;
+  color: #7f34db;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 85%; 
+  }
+
+  .camera-icon {
+    margin-left: 20px; 
+  }
+}
+ 

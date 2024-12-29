@@ -1,0 +1,129 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #942dde;
+  color: rgb(255, 255, 255);
+  position: sticky;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo-part.FP {
+  color: rgb(0, 0, 0);
+}
+
+.logo-part.way {
+  color: rgb(255, 221, 1);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.login-button {
+  background-color: rgb(230, 195, 16);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.login-button:hover {
+  background-color: rgb(255, 191, 0);
+}
+
+.navbar-links a:hover {
+  color: rgb(253, 156, 0);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon,
+.close-icon {
+  font-size: 2em;
+  color: white;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px; 
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a;
+}
+
+.logout-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.8);
+}
+
+.logout-button:active {
+  background-color: #cc0000;
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    position: static;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: #942dde;
+    width: 100%;
+    display: none;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    margin: 10px 0;
+  }
+
+  .navbar-search {
+    margin: 10px 0;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+}

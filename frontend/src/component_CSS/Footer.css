@@ -1,0 +1,97 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #942dde;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo-part.FP {
+  color: rgb(0, 0, 0); 
+}
+
+.logo-part.way {
+  color: rgb(255, 221, 1); 
+}
+
+.footer-text {
+  margin-bottom: 5px;
+  max-width: 90%;
+}
+
+.joke-box {
+  background-color: #444;
+  padding: 20px;
+  padding-top: 0px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+}
+
+.joke-emoji {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.joke-setup, .joke-punchline {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.next-joke-btn {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.next-joke-btn:hover {
+  background-color: #ff9900;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+  color: black;
+  font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+  .joke-setup, .joke-punchline {
+    font-size: 14px;
+  }
+
+  .next-joke-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+
+  .footer-text {
+    margin-bottom: 15px;
+  }
+}
