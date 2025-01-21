@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/news");
+        const response = await axios.get("https://newsio-backend.onrender.com/news");
         setNews(response.data);
       } catch (error) {
         console.error("Error fetching news:", error);
@@ -57,7 +57,7 @@ const Home = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:5000/api/like`, {
+      const response = await axios.post(`https://newsio-backend.onrender.com/api/like`, {
         user: user._id,
         newsId: item._id,
       });
@@ -142,7 +142,7 @@ const Home = () => {
                 </Button>,
               ]}
             >
-              <img src={`http://localhost:5000/${item.image}`} alt={item.title} />
+              <img src={`https://newsio-backend.onrender.com/${item.image}`} alt={item.title} />
               <h2>{item.title}</h2>
             </Card>
           ))}
