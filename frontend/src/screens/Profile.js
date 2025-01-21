@@ -18,7 +18,7 @@ const Profile = () => {
     const fetchUserNews = async () => {
       if (user) {
         const response = await fetch(
-          `http://localhost:5000/api/news/user/${user.username}`
+          `https://newsio-backend.onrender.com/api/news/user/${user.username}`
         );
         const data = await response.json();
         if (response.ok) {
@@ -53,7 +53,7 @@ const Profile = () => {
     formData.append("domain", user?.domain);
 
     try {
-      const response = await fetch("http://localhost:5000/api/news/create", {
+      const response = await fetch("https://newsio-backend.onrender.com/api/news/create", {
         method: "POST",
         body: formData,
       });
@@ -97,7 +97,7 @@ const Profile = () => {
       if (result.isConfirmed) {
         try {
           const response = await fetch(
-            `http://localhost:5000/api/news/delete/${id}`,
+            `https://newsio-backend.onrender.com/api/news/delete/${id}`,
             {
               method: "DELETE",
             }
@@ -202,7 +202,7 @@ const Profile = () => {
               {news.map((item) => (
                 <div key={item._id} className="news-box">
                   <img
-                    src={`http://localhost:5000/${item.image}`}
+                    src={`https://newsio-backend.onrender.com/${item.image}`}
                     alt={item.title}
                     className="news-image"
                   />
